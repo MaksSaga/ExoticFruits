@@ -631,6 +631,11 @@ body {
   padding: 6rem 0;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .header {
+    padding: 5rem 0;
+  }
+}
 .header__logo {
   font-size: 5rem;
   color: #EC2831;
@@ -686,12 +691,24 @@ body {
   margin-bottom: 1.5rem;
   text-shadow: 0 0 3rem #000000;
 }
+@media (max-width: 992px) {
+  .main__primary-text {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
 .main__secondary-text {
   font-weight: 400;
   font-size: 4rem;
   line-height: 4rem;
   margin-bottom: 1.5rem;
   text-shadow: 0 0 3rem #000000;
+}
+@media (max-width: 992px) {
+  .main__secondary-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 
 .section {
@@ -744,7 +761,6 @@ body {
 }
 .section__block-img {
   width: 100%;
-  height: 100%;
   border-radius: 0.5rem;
   border-bottom: 1rem solid rgba(255, 255, 255, 0.5);
 }
@@ -780,6 +796,14 @@ body {
   margin-top: 10rem;
   transition: 0.5s;
 }
+@media (max-width: 992px) {
+  .modal {
+    flex-wrap: wrap;
+    min-width: 30rem;
+    max-width: 45rem;
+    margin-top: 0rem;
+  }
+}
 .modal__img-block {
   border-radius: 0.5rem;
 }
@@ -800,11 +824,11 @@ body {
 .modal__name::before {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 20%;
   height: 2px;
   border-radius: 5px;
   background: #EC2831;
-  top: 130%;
+  top: 120%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -814,6 +838,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 992px) {
+  .modal__block-info {
+    padding: 1rem;
+  }
 }
 .modal__block-close {
   display: flex;
@@ -828,7 +857,7 @@ body {
   height: 5rem;
   justify-content: center;
   align-items: center;
-  color: #555563;
+  color: #32323a;
   transition: all 0.3s ease;
 }
 .modal__block-close:hover {
@@ -866,39 +895,14 @@ body {
   padding: 1rem;
   color: #FFFFFF;
   font-weight: 700;
-  color: #555563;
   transition: all 0.3s ease;
-}
-.modal__prompt-text-copy:hover {
-  background: #3e3e47;
-  color: #FFFFFF;
-}
-
-@media (max-width: 1290px) {
-  .modal {
-    flex-wrap: wrap;
-    min-width: 30rem;
-    max-width: 45rem;
-    margin-top: 0rem;
-  }
-  .modal__block-info {
-    padding: 1rem;
-  }
 }
 @media (max-width: 992px) {
   .modal__prompt-text-copy {
     right: 1rem;
     bottom: 1rem;
   }
-  .main__secondary-text {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .main__primary-text {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-  }
-  header {
-    padding: 5rem 0;
-  }
+}
+.modal__prompt-text-copy:hover {
+  background: #3e3e47;
 }
